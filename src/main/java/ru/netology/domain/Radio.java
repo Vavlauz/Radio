@@ -5,13 +5,16 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 //@NoArgsConstructor
-//@AllArgsConstructor
-//@Data
+@AllArgsConstructor
+@Data
 
 public class Radio {
     private int currentStation;
     private int currentVolume;
     private int qualityStation = 10;
+
+    public Radio() {
+    }
 
     public Radio(int qualityStation) {
         this.qualityStation = qualityStation;
@@ -81,8 +84,6 @@ public class Radio {
 
     }
 
-    public Radio() {
-    }
 
 //    public Radio(int currentStation, int currentVolume, int qualityStation) {
 //        this.currentStation = currentStation;
